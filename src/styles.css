@@ -4746,6 +4746,9 @@ flex-grow: 1;
     
     }
     .border-form5{
+        width: 352px;
+        position: relative;
+        top: -15px;
         border: none;
         border-bottom: 2px solid rgb(225, 225, 225);;
         
@@ -5080,8 +5083,9 @@ flex-grow: 1;
         align-items: flex-start;
         padding: 16px 0px;
         gap: 40px;
-        
-        width: 342px;
+        position: relative;
+        top: -15px;
+        width: 352px;
         height: 58px;
         border: none;
         border-bottom: 2px solid rgb(225, 225, 225);;
@@ -5102,10 +5106,10 @@ flex-grow: 1;
         padding: 16px 0px;
         gap: 24px;
         
-        width: 342px;
+        width: 359px;
         height: 60px;
         position: relative;
-        left: -390px;
+        left: -393px;
         flex: none;
         order: 2;
         align-self: stretch;

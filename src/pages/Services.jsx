@@ -5,6 +5,7 @@ import Form from 'react-bootstrap/Form';
 import Footer from '../components/Footer'
 import Navpage from '../components/NavPage'
 import emailjs from '@emailjs/browser'
+import { Link } from 'react-router-dom';
 
 const Services = () => {
   const form = useRef();
@@ -234,7 +235,9 @@ const Services = () => {
         <Form.Control type="text" placeholder="Enter reply here"  className='border-form'/>      
         </Form.Group>
         </div>
+        <Link to="/servicefeed"style={{textDecoration: 'none'}}>
         <button className='btn-submit'>Submit</button>
+        </Link>
      </div>
        
       <Footer/>

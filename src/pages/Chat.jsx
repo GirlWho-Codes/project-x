@@ -38,16 +38,21 @@ const Chat = () => {
     <>
       <Navpage/>
       <div className='start'>
+        <div className='head'>
         <h1 className='start-head'>Chat with Us</h1>
-      <Form onSubmit={sendEmail} ref={form} className='start-form'>
+        </div>
+        <div className='play-form'>
+
         <p className='start-p'>Let us get to know you</p>
+      <form onSubmit={sendEmail} ref={form} className='start-form'>
+       
         <div className='start-form1'>
-        <Form.Group className='border-form1' controlId="formBasicEmail">
+        <Form.Group className='border-form1' controlId="formBasicName">
         <Form.Control type="text" placeholder="First Name" name='user_name'  className='border-form'/>
         
       </Form.Group>
 
-      <Form.Group className='border-form1' controlId="formBasicEmail">
+      <Form.Group className='border-form1' controlId="formBasicName">
         <Form.Control type="text" placeholder="Last Name" name='user_name' className='border-form'/>
        
       </Form.Group>
@@ -57,23 +62,23 @@ const Chat = () => {
       <Form.Group className='border-form2' controlId="formBasicEmail">
         <Form.Control type="email" name='user_email' placeholder="Email address"  className='border-form'/>
       </Form.Group>
-      <Form.Group className='border-form2' controlId="formBasicEmail">
+      <Form.Group className='border-form4' controlId="formBasicNumber">
      <Form.Control 
-        // onChange={(option) => setSelectedCountry(option.value)}
-        
-        type="text" placeholder="Phone number(Whatsapp number preferably)"  className='border-form'/>
+        type="number" placeholder="Phone number(Whatsapp number preferably)"  className='border-form6'/>
       </Form.Group>
       </div>
 
         <div className='start-form2'>
-        <Form.Group className='border-form2' controlId="formBasicEmail">
+        <Form.Group className='border-form5' controlId="formBasicText">
         <Form.Control type="text" name='message' placeholder="How did you hear about us"  className='border-form'/>      
         </Form.Group>
         </div>
       <Button variant="primary" className='border-btn' type="submit">
         Submit
       </Button>
-    </Form>
+    </form>
+
+        </div>
       </div>
       <Footer/>
     </>

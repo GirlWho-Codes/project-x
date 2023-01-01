@@ -29,58 +29,95 @@ const Services = () => {
       <Navpage/>
       <div className='start-again'>
         <h1 className='btn-head'>Custom Package</h1>
-      <Form  className='start-form' onSubmit={sendEmail} ref={form}>
         <div className='just-start'>
 
-        <p className='btn-p'>What service can we help you with?</p>
-        <div className='button-container'>
-        <div className='button-a'>
-          <button className='button-a1'>Recruitment</button>
-          <button className='button-a2'>Onboarding</button>
-          <button className='button-a3'>Document and copies</button>
-          <button className='button-a4'>Web pages</button>
-        </div>
-        <div className='button-b'>
-          <button className='button-b1'>People management</button>
-          <button className='button-b2'>Training</button>
-          <button className='button-b3'>Exit</button>
-          <button className='button-b4'>Consultation</button>
+<p className='btn-p'>What service can we help you with?</p>
+<div className='button-container'>
+<div className='button-a'>
+  <button className='button-a1'>Recruitment</button>
+  <button className='button-a2'>Onboarding</button>
+  <button className='button-a3'>Document and copies</button>
+  <button className='button-a4'>Web pages</button>
+</div>
+<div className='button-b'>
+  <button className='button-b1'>People management</button>
+  <button className='button-b2'>Training</button>
+  <button className='button-b3'>Exit</button>
+  <button className='button-b4'>Consultation</button>
 
-        </div>
+</div>
 
-        </div>
+</div>
 
-        </div>
+</div>
+      <Form  className='start-form' onSubmit={sendEmail} ref={form}>
+       
         <div className='pp'>
         <p className='btn-p'>Tell us about you and your project</p>
         <div className='start-form1'>
        
 
-        <Form.Group className='border-form1' controlId="formBasicEmail">
-        <Form.Control type="text" placeholder="First Name"  className='border-form'/>
+        <Form.Group className='begin-form1' controlId="formBasicEmail">
+        <Form.Control type="text" placeholder="First Name"  className='begin-form'/>
         
       </Form.Group>
 
-      <Form.Group className='border-form1' controlId="formBasicEmail">
-        <Form.Control type="text" placeholder="Last Name"  className='border-form'/>
+      <Form.Group className='begin-form2' controlId="formBasicEmail">
+        <Form.Control type="text" placeholder="Last Name"  className='begin-form'/>
        
       </Form.Group>
 
         </div>
-      <div className='start-form2'>
-      <Form.Group className='border-form2' controlId="formBasicEmail">
+      <div className='start-form4'>
+      <Form.Group className='begin-form3' controlId="formBasicEmail">
         <Form.Control type="email" placeholder="Email address"  className='border-form'/>
       </Form.Group>
-      <Form.Group className='border-form2' controlId="formBasicEmail">
-        <Form.Control type="text" placeholder="Phone number(Whatsapp number preferably)"  className='border-form'/>
-      </Form.Group>
-
-      <Form.Group className='border-form2' controlId="formBasicEmail">
-        <Form.Control type="text" placeholder="Website"  className='border-form'/>      
-        </Form.Group>
+        
       </div>
 
-        <div className='start-form1'>
+      <div className='start-form3'>
+       
+
+       <Form.Group className='begin-form1' controlId="formBasicEmail">
+       <Form.Control type="text" placeholder="Phone Number"  className='begin-form'/>
+       
+     </Form.Group>
+
+     <Form.Group className='begin-form2' controlId="formBasicText">
+       <Form.Control type="text" placeholder="Country"  className='begin-form'/>
+      
+     </Form.Group>
+
+       </div>
+       <div className='start-form4'>
+      <Form.Group className='begin-form3' controlId="formBasicText">
+        <Form.Control type="text" placeholder="Website"  className='border-form'/>
+      </Form.Group>
+        
+      </div>
+      <div className='start-form4'>
+      <Form.Group className='begin-form3' controlId="formBasicText">
+        <Form.Control type="text" placeholder="Company/Brand description"  className='border-form'/>
+      </Form.Group>
+        
+      </div>
+      <div className='start-form3'>
+       
+
+       <Form.Group className='begin-form1' controlId="formBasicText">
+       <Form.Control type="text" placeholder="Industry of operation"  className='begin-form'/>
+       
+     </Form.Group>
+
+     <Form.Group className='begin-form2' controlId="formBasicText">
+       <Form.Control type="text" placeholder="Geographical location"  className='begin-form'/>
+      
+     </Form.Group>
+
+       </div>
+
+
+        {/* <div className='start-form1'>
         <Form.Group className='border-form1' controlId="formBasicEmail">
        
         <Form.Control type="text" placeholder="City"  className='border-form'/>
@@ -90,12 +127,12 @@ const Services = () => {
         
       </Form.Group>
 
-        </div>
+        </div> */}
         </div>
 
        <div className='ppp'>
 
-       <div className='start-form2'>
+       {/* <div className='start-form2'>
         <Form.Group className='border-form2' controlId="formBasicEmail">
         <Form.Control type="text" placeholder="Company name"  className='border-form'/>      
         </Form.Group>
@@ -115,16 +152,16 @@ const Services = () => {
         <Form.Group className='border-form2' controlId="formBasicEmail">
         <Form.Control type="text" placeholder="How did you hear about us"  className='border-form'/>      
         </Form.Group>
-        </div>
+        </div> */}
 
        </div>
-      <Button variant="primary" className='border-btn' type="submit">
+      {/* <Button variant="primary" className='border-btn' type="submit">
         Submit
-      </Button>
+      </Button> */}
     </Form>
       <div className='p'>
 
-      <p className='btn-p'>What are you looking for?</p>
+      <p className='btn-q'>What are you looking for?</p>
     <div className='button-containera'>
         <div className='button-c'>
           <button className='button-c1'>Getting the right talent</button>
@@ -151,14 +188,14 @@ const Services = () => {
 
       </div>
         <div className='state'>
-      <Form.Group className='border-form2' controlId="formBasicEmail">
+      <Form.Group className='begin-form3' controlId="formBasicEmail">
           <label htmlFor="" className='btn-t'>Is it another service? please comprehensively state it.</label>
         <Form.Control type="text" placeholder="Enter reply here"  className='border-form'/>      
         </Form.Group>
       </div>
 
       <div className='budget'>
-      <p className='btn-p'>What is your budget</p>
+      <p className='btn-r'>What is your budget</p>
       <div className='last-btn'>
       <div className='last-btna'>
         <button className='last-btna1'>$100 - $249</button>
@@ -174,26 +211,26 @@ const Services = () => {
       </div>
       <div className='abcd'>
      <div className='a'>
-     <Form.Group className='border-form2' controlId="formBasicEmail">
+     <Form.Group className='begin-form3' controlId="formBasicEmail">
           <label htmlFor="" className='btn-t'>After would you be willing to schedule a call with us?</label>
         <Form.Control type="text" placeholder="Enter reply here"  className='border-form'/>      
         </Form.Group>
      </div>
         <div className='b'>
-        <Form.Group className='border-form2' controlId="formBasicEmail">
-          <label htmlFor="" className='btn-t'>How do you preferred to be contacted?</label>
+        <Form.Group className='begin-form3' controlId="formBasicEmail">
+          <label htmlFor="" className='btn-s'>How do you preferred to be contacted?</label>
         <Form.Control type="text" placeholder="Enter reply here"  className='border-form'/>      
         </Form.Group>
         </div>
         <div className='c'>
-        <Form.Group className='border-form2' controlId="formBasicEmail">
-          <label htmlFor="" className='btn-t'>What are the best times that works for you?</label>
+        <Form.Group className='begin-form3' controlId="formBasicEmail">
+          <label htmlFor="" className='btn-u'>What are the best times that works for you?</label>
         <Form.Control type="text" placeholder="Enter reply here"  className='border-form'/>      
         </Form.Group>
         </div>
         <div className='d'>
-        <Form.Group className='border-form2' controlId="formBasicEmail">
-          <label htmlFor="" className='btn-t'>How did you hear about us?</label>
+        <Form.Group className='begin-form3' controlId="formBasicEmail">
+          <label htmlFor="" className='btn-q'>How did you hear about us?</label>
         <Form.Control type="text" placeholder="Enter reply here"  className='border-form'/>      
         </Form.Group>
         </div>

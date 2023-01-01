@@ -5502,7 +5502,20 @@ font-size: 16px;
         flex-grow: 0;
     }
     .p-t{
-        font-size: 30px;
+        position: relative;
+        top: 10px;
+        font-weight: 500;
+        line-height: 30px;
+        width: 200%;
+        font-size: 20px;
+    }
+    .card-img{
+        position: relative;
+        left: 135px;
+    }
+    .t-p{
+    position: relative;
+    top: 10px;
     }
     .talent{
         box-sizing: border-box;

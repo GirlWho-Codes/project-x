@@ -161,7 +161,7 @@ const Services = () => {
     </Form>
       <div className='p'>
 
-      <p className='btn-q'>What are you looking for?</p>
+      <p className='btn-w'>What are you looking for?</p>
     <div className='button-containera'>
         <div className='button-c'>
           <button className='button-c1'>Getting the right talent</button>
